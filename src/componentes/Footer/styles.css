@@ -1,0 +1,12 @@
+.footer-center {
+  margin-top: 4rem;             /* mt-16 */
+  padding-top: 0.50rem;            /* pt-8 */
+  border-top: 1px solid #e5e7eb; /* border-t border-gray-200 */
+  text-align: center;           /* text-center */
+  color: var(--grafite);               /* text-gray-500 */
+  font-size: 0.875rem;          /* text-sm */
+}
+
+.footer-center p + p {
+  margin-top: 0.25rem;          /* mt-1 */
+}

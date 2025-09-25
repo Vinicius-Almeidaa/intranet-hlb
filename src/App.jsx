@@ -1,45 +1,25 @@
-import { useEffect, useState } from 'react'
-import './App.css'
-import BarraDePesquisa from './componentes/BarraDePesquisa'
+import Header from './componentes/Header'
 import Card from './componentes/Card'
-import Filtro from './componentes/Filtro'
-import Ordenacao from './componentes/Ordenacao'
-import Sidebar from './componentes/Sidebar'
+import Footer from './componentes/Footer'
+import './App.css'
 
-function App() {
-  const [dados, setDados] = useState([]);
-  useEffect(() => {
-    fetch('https://my-json-server.typicode.com/MonicaHillman/codeconnect-api/publicacoes')
-      .then(resposta => resposta.json())
-      .then(dados => setDados(dados))
-  }, [])
+export default function App() {
 
   return (
-    <div className='container'>
-      <Sidebar />
-      <div>
-        <BarraDePesquisa />
-        <Filtro />
-        <Ordenacao />
-        <ul className='lista-cards'>
-          {dados ? dados.map((item, index) => (
-            <li key={index}>
-              <Card
-                id={item.id}
-                imagemUrl={item.imagem_capa}
-                titulo={item.titulo}
-                resumo={item.resumo}
-                linhasDeCodigo={item.linhas_de_codigo}
-                compartilhamentos={item.compartilhamentos}
-                comentarios={item.comentarios}
-                usuario={item.usuario}
-              />
-            </li>
-          )) : null}
-        </ul>
-      </div>
+    <div className="layout">
+
+      <main className="main">
+        <Header />
+        <section className="container">
+          <h2 className="section-title">APLICAÇÕES</h2>
+          <div className="apps-grid">
+            <Card />
+          </div>
+        <Footer />
+
+
+        </section>
+      </main>
     </div>
   )
 }
-
-export default App

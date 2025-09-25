@@ -1,10 +1,11 @@
 import './styles.css';
+
 export default function Filtro() {
     return (
         <section className="container-filtro">
-            <ul>
+            {/* <ul>
                 <li>Programação</li>
-            </ul>
+            </ul> */}
 
             <button>Limpar tudo</button>
         </section>

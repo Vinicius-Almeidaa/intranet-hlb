@@ -1,4 +1,9 @@
+/* 
 :root {
+  --azul-principal: #004ea8;
+  --azul-escuro: #002F6C;
+  --azul-brilhante: #007fff;
+  --azul-eletrico: #007fff;
   --verde-destaque: #81FE88;
   --fonte: 'Prompt', sans-serif;
   --verde-petroleo: #132E35;
@@ -9,6 +14,9 @@
   --cinza-claro: #BCBCBC;
   --offwhite: #E1E1E1;
   --branco: #FFFFFF;
+  --cinza-mtescuro: #0B0E14;
+  --cinza-chumbo: #111827;
+  --cinza-hlb: #F0F0F0;
 }
 
 * {
@@ -18,6 +26,30 @@
 }
 
 body {
-  background-color: var(--grafite);
+  background-color: var(--cinza-hlb);
   font-family: var(--fonte);
 }
+
+ */
+
+ Resetzinho
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; background:#f5f7fb; color:#0f172a; }
+a { color: inherit; }
+
+:root {
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --muted: #64748b;
+  --primary: #0a58ff;
+  --secondary:#0a9aec;
+  --primary-600: #1d4ed8;
+  --border: #e5e7eb;
+  --grafite: var(--bg);
+  
+}
+
+/* Helpers */
+.container { max-width: 1200px; margin: 10px auto; padding: 0 16px; }
+

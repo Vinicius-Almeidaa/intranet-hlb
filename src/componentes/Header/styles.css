@@ -1,0 +1,22 @@
+.header {
+   display: flex;
+   justify-content: center;
+   background: var(--bg)
+}
+
+
+.brand {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   font-weight: 700;
+   padding: 20px;
+   
+}
+.brand img {
+   height: 62px;
+   
+}
+
+
+
