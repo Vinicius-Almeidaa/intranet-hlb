@@ -2,7 +2,7 @@
 .layout {
     display: flex;
     min-height: 100vh;
-    background: var(--secondary)
+    background: var(--masb);
     /* background: var(--bg); */
     
 }
